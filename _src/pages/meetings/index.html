@@ -1,0 +1,15 @@
+---
+layout: base
+permalink: meetings/index.html
+eleventyNavigation:
+  key: Meetings
+title: Meetings
+---
+
+<h1>{{ title }}</h1>
+
+<ol>
+{% for meeting in collections.meetings %}
+    <li><a href="{{ meeting.url }}">{{ meeting.data.title }}</a></li>
+{% endfor %}
+</ol>

@@ -1,0 +1,28 @@
+{
+    "name": "project-doc-starter",
+    "version": "1.0.0",
+    "description": "Client's Project Documentation Starter",
+    "main": "index.html",
+    "scripts": {
+        "serve": "eleventy --serve",
+        "build": "eleventy"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/apart-edgar/project-doc-starter.git"
+    },
+    "author": "Edgar Lechaudel",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/apart-edgar/project-doc-starter/issues"
+    },
+    "homepage": "https://github.com/apart-edgar/project-doc-starter#readme",
+    "dependencies": {
+        "@11ty/eleventy": "^0.11.1",
+        "markdown-it": "^12.0.2",
+        "markdown-it-anchor": "^6.0.0"
+    },
+    "devDependencies": {
+        "@11ty/eleventy-navigation": "^0.1.6"
+    }
+}

@@ -1,0 +1,15 @@
+---
+layout: base
+---
+
+<header>
+    <h1>{{ title }}</h1>
+    {% if epic %} <p>In Epic <strong>{{ epic }}</strong></p> {% endif %}
+    <p>Took place on {{ date }}</p>
+</header>
+
+<hr>
+
+<main>
+  {{ content | safe }}
+</main>
