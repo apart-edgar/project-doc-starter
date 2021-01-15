@@ -1,3 +1,6 @@
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const pluginDate = require("eleventy-plugin-date");
+
 module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy({ "_src/_styles": "styles" });
@@ -14,6 +17,18 @@ module.exports = function(eleventyConfig) {
         return collection.getFilteredByGlob("_src/pages/meetings/**/*.md");
     });
 
+    // Filters
+    eleventyConfig.addFilter("groupByEx", (arr, key) => {
+        const result = {};
+        arr.forEach(item => {
+            const keys = key.split('.');
+            const value = keys.reduce((object, key) => object[key], item);
+
+            (result[value] || (result[value] = [])).push(item);
+        });
+        return result;
+    });
+
     // Markdown library to manage Headings ID
     const markdownIt = require("markdown-it");
     // create a new markdown-it instance with the plugin
@@ -23,13 +38,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.setLibrary("md", markdownLib);
 
     // Plugins
-
-    // Eleventy navigation
-    // const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-    // module.exports = function(eleventyConfig) {
-    //     eleventyConfig.addPlugin(eleventyNavigationPlugin);
-    // };
     eleventyConfig.addPlugin(require('@11ty/eleventy-navigation'));
+    eleventyConfig.addPlugin(pluginDate);
 
     return {
         dir: {

@@ -4,8 +4,8 @@ layout: base
 
 <header>
     <h1>{{ title }}</h1>
-    {% if epic %} <p>In Epic <strong>{{ epic }}</strong></p> {% endif %}
-    <p>Took place on {{ date }}</p>
+    {% if epic %} <span class="badge badge--black">Epic {{ epic }}</span> {% endif %}
+    <p>{{ date | readableDate }}</p>
 </header>
 
 <hr>

@@ -10,6 +10,6 @@ title: Meetings
 
 <ol>
 {% for meeting in collections.meetings %}
-    <li><a href="{{ meeting.url }}">{{ meeting.data.title }}</a></li>
+    <li><a href="{{ meeting.url }}">{{ meeting.data.title }} (Epic {{ meeting.data.epic }})</a></li>
 {% endfor %}
 </ol>

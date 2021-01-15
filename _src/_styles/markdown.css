@@ -365,3 +365,17 @@ table tr td :last-child {
         page-break-after: avoid;
     }
 }
+
+
+/* Custom styles */
+
+.badge {
+    padding: 4px 6px;
+    background-color: #aaa;
+    border-radius: 100px;
+}
+
+.badge--black {
+    background-color: #000;
+    color: #fff;
+}

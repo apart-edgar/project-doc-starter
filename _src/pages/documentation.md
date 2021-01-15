@@ -6,3 +6,4 @@ eleventyNavigation:
 ---
 
 # Hello world
+This is the starting point of your documentation (shared knowledge base).

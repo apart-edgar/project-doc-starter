@@ -23,6 +23,7 @@
         "markdown-it-anchor": "^6.0.0"
     },
     "devDependencies": {
-        "@11ty/eleventy-navigation": "^0.1.6"
+        "@11ty/eleventy-navigation": "^0.1.6",
+        "eleventy-plugin-date": "^1.0.0"
     }
 }
