@@ -1,5 +1,6 @@
 ---
 layout: base
+title: Documentation
 permalink: /
 eleventyNavigation:
   key: Home
