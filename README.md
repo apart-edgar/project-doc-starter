@@ -12,7 +12,7 @@ Head over to the green button "Code" at the top of this page and choose "Donwloa
 
 ## How to use this starter?
 There are 4 things you need to know:
-- Everything you create is in the ```_src``` folder and more specifically within the ```pages``` folder. The public folder only contains the static files used to display the result on your localhost or online.
+- Everything you create will live in the ```_src``` folder and more specifically within the ```pages``` folder. The ```public``` folder only contains the static files used to display the result on your localhost or online. You can ignore all the other files and folders, they are boring config.
 - The ```documentation.md``` file is the home page of your project. Use this page to structure and synthetize the knowledge you collect during the project.
 - Create new markdown files in the ```meetings``` folder for each new meetings you have with the client and complete the content by following the defined file structure.
 - Every document you can create should be written following the markdown syntax. Visit this [cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) if you need assistance. Eleventy also allows you to use html but use that only if needed. For example, you could need to add a container around your tables.
