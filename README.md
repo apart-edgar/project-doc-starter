@@ -18,7 +18,10 @@ There are 4 things you need to know:
 - Every document you can create should be written following the markdown syntax. Visit this [cheatsheet](https://www.markdownguide.org/cheat-sheet/) if you need assistance. Eleventy also allows you to use html but use that only if needed. For example, you could need to add a container around your tables.
 
 ## How to see my work in a browser?
-Open your terminal at the root your project and run ```npm run serve``` then head over to the address ```http://localhost:8080" in your browser of choice. Here it is! Anytime you make changes in your files, those will be reflected in your browser with auto-reload. To quit this the serving, go back to your termial and do a Control + C. This will stop the current active command.
+Open your terminal at the root your project and run ```npm run serve``` then head over to the address http://localhost:8080 in your browser of choice. Here it is! Anytime you make changes in your files, those will be reflected in your browser with auto-reload. To quit this the serving, go back to your termial and do a Control + C. This will stop the current active command.
 
 ## How and where to publish my project documentation?
-Open your terminal and run ```npm run build```. This command will generate a ready to publish ```public``` folder at the root of your project. Use this folder to publish it on your work/client dedicated server and make it available on the web. Password protect with FTP access if you need to.
+1. Define where the project will be hosted and what will be the root url
+2. Grab this url and go to the folder ```_data```, open the file globals.json and this url to the data entry ```url```. Save the file
+3. Turn off the serve command if active in your terminal.
+4. Open your terminal and run ```npm run build```. This command will generate a ready to publish ```public``` folder at the root of your project. Use this folder to publish it on your work/client dedicated server and make it available on the web. Password protect with FTP access if you need to.
