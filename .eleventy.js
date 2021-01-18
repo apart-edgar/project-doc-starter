@@ -5,6 +5,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy({ "_src/_styles": "styles" });
     eleventyConfig.addPassthroughCopy({ "_src/_assets": "assets" });
+    eleventyConfig.addPassthroughCopy("_src/robots.txt");
 
     // Layouts
     eleventyConfig.addLayoutAlias('base', 'layouts/base.njk');

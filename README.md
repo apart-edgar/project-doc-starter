@@ -22,6 +22,6 @@ Open your terminal at the root your project and run ```npm run serve``` then hea
 
 ## How and where to publish my project documentation?
 1. Define where the project will be hosted and what will be the root url
-2. Grab this url and go to the folder ```_data```, open the file globals.json and this url to the data entry ```url```. Save the file
+2. Grab this url and go to the folder ```_data```, open the file globals.json and paste this url into the data entry ```url```. Save the file
 3. Turn off the serve command if active in your terminal.
-4. Open your terminal and run ```npm run build```. This command will generate a ready to publish ```public``` folder at the root of your project. Use this folder to publish it on your work/client dedicated server and make it available on the web. Password protect with FTP access if you need to.
+4. Open your terminal and run ```npm run build```. This command will generate a ready to publish ```public``` folder at the root of your project. Use this folder to publish it on your work/client dedicated server and make it available on the web. Password protect with FTP access if you need to. The starter includes by default a robots.txt file to make sure the project is not indexable on the web.
